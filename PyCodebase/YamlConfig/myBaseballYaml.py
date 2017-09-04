@@ -10,15 +10,15 @@ def ymlWriter(filepath, data):
         yaml.dump(data, ymlFile) 
 
 class YamlConfig(object):
-    def __init__(self, filepath, data):
-        self.filepath = filepath
-        self.data = data
+    # def __init__(self, filepath, data):
+        # self.filepath = filepath
+        # self.data = data
 
-    def yamlReader(self):
-        with open(self.filepath, "r") as yamlFileR:
+    def yamlReader(self, filepath):
+        with open(filepath, "r") as yamlFileR:
             data = yaml.load(yamlFileR)
         return data
 
-    def yamlWriter(self):
-        with open(self.filepath, "w") as yamlFileW:
-            yaml.dump(self.data, yamlFileW)
+    def yamlWriter(self, filepath, data):
+        with open(filepath, "w") as yamlFileW:
+            yaml.dump(data, yamlFileW)

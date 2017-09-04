@@ -1,0 +1,15 @@
+weaponary:
+  sword: 100
+  greatsword: 125
+  axe: 80
+  crossbow: 150
+  arrow: 500
+  mace: 90
+  war hammer: 85
+
+imperial legion:
+  Auxiliary: Recruit
+  Quaestor: Sergeant
+  Praefect: Lieutenant
+  Tribune: Captain
+  Legate: Commander

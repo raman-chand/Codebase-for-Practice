@@ -19,6 +19,17 @@ class YamlConfig(object):
             data = yaml.load(yamlFileR)
         return data
 
-    def yamlWriter(self, filepath, data):
+    def yamlWriter(self):
+        filepath = "C:\Workspace\Codebase-for-Practice\PyCodebase\YamlConfig\config\myBaseballConfig2.yaml"
+        data = {
+            "Database": {
+                "host": "localhost",
+                "username": "rootLikeNoOther",
+                "password": "anUnbreakablePassword",
+                "database": "someDatabaseNameThatIllNeverShare"
+            }
+        }
         with open(filepath, "w") as yamlFileW:
             yaml.dump(data, yamlFileW)
+        yamlFileW.close()
+        return filepath
